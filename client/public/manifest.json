@@ -1,0 +1,17 @@
+{
+  "name": "FM93 Online - Grandes Canciones",
+  "short_name": "FM93",
+  "description": "FM93 Online - Grandes Canciones desde Tacuarembó, Uruguay",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "523x290",
+      "type": "image/png"
+    }
+  ]
+}
