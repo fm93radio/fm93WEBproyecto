@@ -211,13 +211,13 @@ export default function Home() {
           <h2 className="text-lg font-semibold text-white text-center">
             Descarga nuestra App aquí
           </h2>
-          <div className="flex justify-center items-center gap-4 flex-wrap">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             {/* Android Button */}
             <a
               href="https://play.google.com/store/apps/details?id=com.fm93.radio"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 rounded-xl transition-all duration-300 shadow-lg hover:shadow-green-500/50 hover:scale-105"
+              className="flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 rounded-lg shadow-lg transition-all duration-300 w-full sm:w-auto"
               title="Descarga nuestra app en Google Play (Prueba Beta)"
             >
               <svg className="w-8 h-8" viewBox="0 0 24 24" fill="white">
@@ -226,7 +226,7 @@ export default function Home() {
               </svg>
               <div className="text-left">
                 <div className="text-xs text-green-100">Disponible en</div>
-                <div className="text-sm font-bold text-white">Google Play</div>
+                <div className="text-sm font-bold text-white">App Store</div>
               </div>
             </a>
             
