@@ -226,7 +226,7 @@ export default function Home() {
               </svg>
               <div className="text-left">
                 <div className="text-xs text-green-100">Disponible en</div>
-                <div className="text-sm font-bold text-white">Google Play</div>
+                <div className="text-sm font-bold text-white">Google Play Store</div>
               </div>
             </a>
             
