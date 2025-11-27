@@ -211,13 +211,13 @@ export default function Home() {
           <h2 className="text-lg font-semibold text-white text-center">
             Descarga nuestra App aquí
           </h2>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center items-stretch gap-4 w-full sm:w-auto">
             {/* Android Button */}
             <a
               href="https://play.google.com/store/apps/details?id=com.fm93.radio"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 rounded-lg shadow-lg transition-all duration-300 w-full sm:w-auto"
+              className="flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 rounded-lg shadow-lg transition-all duration-300 w-full sm:w-auto flex-1 sm:flex-none justify-center"
               title="Descarga nuestra app en Google Play (Prueba Beta)"
             >
               <svg className="w-8 h-8" viewBox="0 0 24 24" fill="white">
@@ -226,26 +226,24 @@ export default function Home() {
               </svg>
               <div className="text-left">
                 <div className="text-xs text-green-100">Disponible en</div>
-                <div className="text-sm font-bold text-white">Google Play (Android)</div>
+                <div className="text-sm font-bold text-white">Google Play</div>
               </div>
             </a>
             
-                {/* IPhone Button - Próximamente */}
-    <a
-      href="#"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-3 px-6 py-3 bg-gray-700 hover:bg-gray-700 rounded-lg shadow-lg transition-all duration-300 opacity-50 cursor-not-allowed w-full sm:w-auto"
-      title="Próximamente en App Store"
-    >
-      <svg className="w-8 h-8" viewBox="0 0 24 24" fill="white">
-        <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 19.3.5 15.5.5 11.2c0-4.3 2.8-6.5 5.5-6.5 1.1 0 2.2.6 3 .6s2.1-.6 3.2-.6c2.7 0 5.5 2.2 5.5 6.5 0 1.8-.7 3.5-1.65 4.93zM12.5 4.1c0-1.5-1-2.6-2.5-2.6S7.5 2.6 7.5 4.1c0 1.5 1 2.6 2.5 2.6s2.5-1.1 2.5-2.6z" />
-      </svg>
-      <div className="text-left">
-        <div className="text-xs text-gray-300">Próximamente en</div>
-        <div className="text-sm font-bold text-white">App Store</div>
-      </div>
-    </a>
+            {/* IPhone Button - Próximamente */}
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-6 py-3 bg-gray-700 hover:bg-gray-700 rounded-lg shadow-lg transition-all duration-300 opacity-50 cursor-not-allowed w-full sm:w-auto flex-1 sm:flex-none justify-center"
+              title="Próximamente en App Store"
+            >
+              <span className="text-2xl filter grayscale opacity-70">🍎</span>
+              <div className="text-left whitespace-nowrap">
+                <div className="text-xs text-gray-300">Próximamente en</div>
+                <div className="text-sm font-bold text-white">App Store</div>
+              </div>
+            </a>
 
           </div>
         </div>
