@@ -214,20 +214,22 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row justify-center items-stretch gap-4 w-full sm:w-auto">
             {/* Android Button */}
             <a
-              href="https://play.google.com/store/apps/details?id=com.fm93.radio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 rounded-lg shadow-lg transition-all duration-300 w-full sm:w-auto flex-1 sm:flex-none justify-center"
-              title="Descarga nuestra app en Google Play (Prueba Beta)"
-            >
-              <svg className="w-8 h-8" viewBox="0 0 24 24" fill="white">
-                <path d="M17.523 15.341l-3.821-2.207V10.866l3.821-2.207 2.783 1.608c.781.451.781 1.584 0 2.035l-2.783 1.608zM13.702 8.659L9.88 6.452c-.781-.451-1.741.113-1.741 1.017v4.414l5.563-3.224zM8.139 13.117v4.414c0 .904.96 1.468 1.741 1.017l3.822-2.207-5.563-3.224z"/>
-                <path d="M3.5 12l4.639 2.683V9.317L3.5 12z"/>
-              </svg>
-              <div className="text-left">
-                <div className="text-xs text-green-100">Disponible en</div>
-                <div className="text-sm font-bold text-white">Google Play Store</div>
-              </div>
+           href="https://play.google.com/store/apps/details?id=com.fm93.radio" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 px-5 py-3 bg-green-600 hover:bg-green-500 rounded-xl shadow-lg shadow-green-900/20 transition-all duration-300 group"
+          title="Descarga nuestra app en Google Play"
+        >
+          {/* Android Robot Icon */}
+          <div className="text-white">
+             <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
+                <path d="M16.6 5.66l1.7-2.95c.13-.22.06-.51-.16-.64-.22-.13-.51-.06-.64.16l-1.72 2.97C14.49 4.69 13.29 4.41 12 4.41s-2.49.28-3.78.8L6.5 2.23c-.13-.22-.42-.29-.64-.16-.22.13-.29.42-.16.64l1.7 2.95C5.07 7.02 3.5 9.35 3.5 12h17c0-2.65-1.57-4.98-3.9-6.34zM9 9.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm6 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zM3.5 13v6c0 1.66 1.34 3 3 3h11c1.66 0 3-1.34 3-3v-6h-17z" />
+             </svg>
+          </div>
+          <div className="text-left">
+            <div className="text-[10px] uppercase text-green-100 font-medium">Disponible en</div>
+            <div className="text-sm font-bold text-white leading-tight">Google Play Store</div>
+          </div>
             </a>
             
             {/* IPhone Button - Próximamente */}
@@ -236,12 +238,12 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-6 py-3 bg-gray-700 hover:bg-gray-700 rounded-lg shadow-lg transition-all duration-300 opacity-50 cursor-not-allowed w-full sm:w-auto flex-1 sm:flex-none justify-center"
-              title="Próximamente en App Store"
+              title="Próximamente en Google Play Store"
             >
               <span className="text-2xl filter grayscale opacity-70">🍎</span>
               <div className="text-left whitespace-nowrap">
                 <div className="text-xs text-gray-300">Próximamente en</div>
-                <div className="text-sm font-bold text-white">App Store</div>
+                <div className="text-sm font-bold text-white">Google Play Store</div>
               </div>
             </a>
 
