@@ -236,7 +236,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-6 py-3 bg-gray-700 hover:bg-gray-700 rounded-lg shadow-lg transition-all duration-300 opacity-50 cursor-not-allowed w-full sm:w-auto flex-1 sm:flex-none justify-center"
-              title="Próximamente en App Store"
+              title="Próximamente en Google Play Store"
             >
               <span className="text-2xl filter grayscale opacity-70">🍎</span>
               <div className="text-left whitespace-nowrap">
