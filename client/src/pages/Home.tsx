@@ -241,7 +241,7 @@ export default function Home() {
               <span className="text-2xl filter grayscale opacity-70">🍎</span>
               <div className="text-left whitespace-nowrap">
                 <div className="text-xs text-gray-300">Próximamente en</div>
-                <div className="text-sm font-bold text-white">App Store</div>
+                <div className="text-sm font-bold text-white">Google Play Store</div>
               </div>
             </a>
 
