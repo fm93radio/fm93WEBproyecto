@@ -232,21 +232,24 @@ export default function Home() {
           </div>
             </a>
             
-            {/* IPhone Button - Próximamente */}
+           {/* iPhone Button - Próximamente */}
             <a
               href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 px-6 py-3 bg-gray-700 hover:bg-gray-700 rounded-lg shadow-lg transition-all duration-300 opacity-50 cursor-not-allowed w-full sm:w-auto flex-1 sm:flex-none justify-center"
-              title="Próximamente en Google Play Store"
+              className="flex items-center gap-3 px-5 py-3 bg-gray-700 hover:bg-gray-700 rounded-xl shadow-lg transition-all duration-300 opacity-60 cursor-not-allowed"
+              title="Próximamente en App Store"
+              onClick={(e) => e.preventDefault()}
             >
-              <span className="text-2xl filter grayscale opacity-70">🍎</span>
-              <div className="text-left whitespace-nowrap">
-                <div className="text-xs text-gray-300">Próximamente en</div>
-                <div className="text-sm font-bold text-white">Google Play Store</div>
+              {/* Apple Icon */}
+              <div className="text-white">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
+                  <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                </svg>
+              </div>
+              <div className="text-left">
+                <div className="text-[10px] uppercase text-gray-300 font-medium">Próximamente en</div>
+                <div className="text-sm font-bold text-white leading-tight">App Store</div>
               </div>
             </a>
-
           </div>
         </div>
 
