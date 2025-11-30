@@ -2,6 +2,7 @@ import { APP_LOGO } from "@/const";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
+  // Updated: 2025-11-30 - Android button with Google Play Store
   const [isPlaying, setIsPlaying] = useState(false);
   const [statusText, setStatusText] = useState("Presiona para escuchar");
   const [isLoading, setIsLoading] = useState(false);
