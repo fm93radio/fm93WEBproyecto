@@ -164,17 +164,15 @@ export default function Home() {
           {/* Play Button */}
           <button
             onClick={togglePlay}
-            className={`w-[200px] h-[200px] rounded-full bg-gradient-radial from-[rgba(0,255,0,0.3)] to-[rgba(0,255,0,0.05)] border-4 border-[#00ff00] flex items-center justify-center cursor-pointer transition-all duration-300 shadow-[0_0_30px_rgba(0,255,0,0.5),inset_0_0_30px_rgba(0,255,0,0.1)] hover:scale-105 hover:shadow-[0_0_50px_rgba(0,255,0,0.8),inset_0_0_30px_rgba(0,255,0,0.2)] active:scale-[0.98] relative overflow-hidden ${
-              isPlaying ? "playing" : ""
-            }`}
+            className={`w-[200px] h-[200px] rounded-full bg-gradient-radial from-[rgba(0,255,0,0.3)] to-[rgba(0,255,0,0.05)] border-4 border-[#00ff00] flex items-center justify-center cursor-pointer transition-all duration-300 shadow-[0_0_30px_rgba(0,255,0,0.5),inset_0_0_30px_rgba(0,255,0,0.1)] hover:scale-105 hover:shadow-[0_0_50px_rgba(0,255,0,0.8),inset_0_0_30px_rgba(0,255,0,0.2)] active:scale-[0.98] relative overflow-hidden ${isPlaying ? "playing" : ""
+              }`}
           >
             <div className="absolute inset-0 rounded-full border-2 border-[rgba(0,255,0,0.3)] animate-pulse" />
             <div
-              className={`transition-all duration-300 ${
-                isPlaying
-                  ? "w-8 h-12 border-l-[15px] border-r-[15px] border-[#00ff00]"
-                  : "w-0 h-0 border-l-[60px] border-l-[#00ff00] border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent ml-4"
-              }`}
+              className={`transition-all duration-300 ${isPlaying
+                ? "w-8 h-12 border-l-[15px] border-r-[15px] border-[#00ff00]"
+                : "w-0 h-0 border-l-[60px] border-l-[#00ff00] border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent ml-4"
+                }`}
             />
           </button>
 
@@ -214,25 +212,25 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row justify-center items-stretch gap-4 w-full sm:w-auto">
             {/* Android Button */}
             <a
-           href="https://play.google.com/store/apps/details?id=com.fm93.radio" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-3 px-5 py-3 bg-green-600 hover:bg-green-500 rounded-xl shadow-lg shadow-green-900/20 transition-all duration-300 group"
-          title="Descarga nuestra app en Google Play"
-        >
-          {/* Android Robot Icon */}
-          <div className="text-white">
-             <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-                <path d="M16.6 5.66l1.7-2.95c.13-.22.06-.51-.16-.64-.22-.13-.51-.06-.64.16l-1.72 2.97C14.49 4.69 13.29 4.41 12 4.41s-2.49.28-3.78.8L6.5 2.23c-.13-.22-.42-.29-.64-.16-.22.13-.29.42-.16.64l1.7 2.95C5.07 7.02 3.5 9.35 3.5 12h17c0-2.65-1.57-4.98-3.9-6.34zM9 9.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm6 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zM3.5 13v6c0 1.66 1.34 3 3 3h11c1.66 0 3-1.34 3-3v-6h-17z" />
-             </svg>
-          </div>
-          <div className="text-left">
-            <div className="text-[10px] uppercase text-green-100 font-medium">Disponible en</div>
-            <div className="text-sm font-bold text-white leading-tight">Google Play Store</div>
-          </div>
+              href="https://play.google.com/store/apps/details?id=com.fm93.radio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-5 py-3 bg-green-600 hover:bg-green-500 rounded-xl shadow-lg shadow-green-900/20 transition-all duration-300 group"
+              title="Disponible en Google Play Store"
+            >
+              {/* Android Robot Icon */}
+              <div className="text-white">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
+                  <path d="M17.6,9.48L19.43,6.31C19.5,6.19 19.5,6.04 19.41,5.94C19.33,5.84 19.2,5.8 19.09,5.84L17.15,6.95C15.65,6.26 13.9,5.88 12,5.88C10.1,5.88 8.35,6.26 6.85,6.95L4.91,5.84C4.8,5.8 4.67,5.84 4.59,5.94C4.5,6.04 4.5,6.19 4.57,6.31L6.4,9.48C3.77,10.92 2,13.7 2,16.88H22C22,13.7 20.23,10.92 17.6,9.48M7.5,14.5C6.95,14.5 6.5,14.05 6.5,13.5C6.5,12.95 6.95,12.5 7.5,12.5C8.05,12.5 8.5,12.95 8.5,13.5C8.5,14.05 8.05,14.5 7.5,14.5M16.5,14.5C15.95,14.5 15.5,14.05 15.5,13.5C15.5,12.95 15.95,12.5 16.5,12.5C17.05,12.5 17.5,12.95 17.5,13.5C17.5,14.05 17.05,14.5 16.5,14.5Z" />
+                </svg>
+              </div>
+              <div className="text-left">
+                <div className="text-[10px] uppercase text-green-100 font-medium">Disponible en</div>
+                <div className="text-sm font-bold text-white leading-tight">Google Play Store</div>
+              </div>
             </a>
-            
-           {/* iPhone Button - Próximamente */}
+
+            {/* iPhone Button - Próximamente */}
             <a
               href="#"
               className="flex items-center gap-3 px-5 py-3 bg-gray-700 hover:bg-gray-700 rounded-xl shadow-lg transition-all duration-300 opacity-60 cursor-not-allowed"
