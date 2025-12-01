@@ -34,6 +34,8 @@ export default function Home() {
         console.log('Service Worker registration failed:', error);
       });
     }
+
+    console.log("Version: Google Play Store Update v1");
   }, []);
 
   const togglePlay = () => {
