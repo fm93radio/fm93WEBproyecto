@@ -301,6 +301,7 @@ export default function Home() {
 
         {/* Footer */}
         <div className="text-xs text-gray-500 text-center mb-5">
+          <div className="mb-2 text-[10px] text-gray-600">v1.1 - Google Play Update</div>
           <a
             href="https://automaias-web.vercel.app/"
             target="_blank"

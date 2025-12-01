@@ -1,4 +1,4 @@
-const CACHE_NAME = 'fm93-v1';
+const CACHE_NAME = 'fm93-v2';
 const urlsToCache = [
   '/',
   '/logo.png',
@@ -21,7 +21,7 @@ self.addEventListener('fetch', (event) => {
         }
         return fetch(event.request);
       }
-    )
+      )
   );
 });
 
