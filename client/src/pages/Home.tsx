@@ -11,7 +11,7 @@ export default function Home() {
   const retryCountRef = useRef(0);
   const userPausedRef = useRef(false);
   const MAX_RETRIES = 5;
-  const STREAM_URL = "https://s47.myradiostream.com:12110/listen.m4a";
+  const STREAM_URL = "https://s47.myradiostream.com/12110/listen.mp3";
 
   useEffect(() => {
     // Restaurar volumen guardado
@@ -215,11 +215,11 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row justify-center items-stretch gap-4 w-full sm:w-auto">
             {/* Android Button */}
             <a
-              href="https://play.google.com/store/apps/details?id=com.fm93.radio"
+              href="https://play.google.com/apps/testing/com.fm93.radio"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-5 py-3 bg-green-600 hover:bg-green-500 rounded-xl shadow-lg shadow-green-900/20 transition-all duration-300 group"
-              title="Disponible en Google Play Store"
+              title="Disponible en Google Play Store (Prueba Cerrada)"
             >
               {/* Android Robot Icon */}
               <div className="text-white">
@@ -229,7 +229,7 @@ export default function Home() {
               </div>
               <div className="text-left">
                 <div className="text-[10px] uppercase text-green-100 font-medium">Disponible en</div>
-                <div className="text-sm font-bold text-white leading-tight">Google Play Store</div>
+                <div className="text-sm font-bold text-white leading-tight">Google Play (Beta)</div>
               </div>
             </a>
 
@@ -301,7 +301,7 @@ export default function Home() {
 
         {/* Footer */}
         <div className="text-xs text-gray-500 text-center mb-5">
-          <div className="mb-2 text-[10px] text-gray-600">v1.1 - Google Play Update</div>
+          <div className="mb-2 text-[10px] text-gray-600">v1.3 - Testing Link Update</div>
           <a
             href="https://automaias-web.vercel.app/"
             target="_blank"
